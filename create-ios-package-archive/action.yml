@@ -37,7 +37,7 @@ runs:
         NAME: ${{ inputs.name }}
       shell: bash
     - id: archive
-      uses: holepunchto/actions/create-archive@v1
+      uses: tony-go/hp-actions/create-archive@test/ios-package-archive
       with:
         directory: ${{ steps.payload.outputs.directory }}
         paths: Payload
